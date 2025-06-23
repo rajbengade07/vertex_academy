@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vertex Academy</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Add Lightbox CSS (if allowed, or use custom modal later) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Vertex Academy Logo" />
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1>Planning + Hard Work + Confidence = <span>Success</span></h1>
+      <a href="#contact" class="hero-btn">Enroll Now</a>
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- About Us Section -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-image">
+      <img src="assets/founder_image.jpg" alt="Founder Image">
+    </div>
+    <div class="about-content">
+      <h2>About <span>Vertex Academy</span></h2>
+      <p>
+        At <strong>Vertex Academy</strong>, we believe in shaping strong academic foundations from Class 1 to Class 10. Our goal is not just to help students score marks, but to help them understand, grow, and love learning.
+      </p>
+      <p>
+        Founded by <strong>Mr. Deepak Ghatkar</strong>, a passionate educator with over [X] years of experience, Vertex Academy is more than just a tuition class — it’s a place where students are guided, mentored, and inspired to reach their full potential.
+      </p>
+      <p>
+        With a perfect blend of modern teaching techniques, personalized attention, and regular assessments — we ensure each child gets the care and clarity they deserve.
+      </p>
+      <div class="about-highlights">
+      <div class="highlight-card">
+        <h4>Standards</h4>
+        <p>1st to 10th</p>
+      </div>
+      <div class="highlight-card">
+        <h4>Board</h4>
+        <p>SSC and CBSE</p>
+      </div>
+      <div class="highlight-card">
+        <h4>Medium</h4>
+        <p>English and Semi-English</p>
+      </div>
+      </div>
+
+      <a href="#contact" class="about-btn">Join Us Today</a>
+    </div>
+  </div>
+</section>
+
+   <!-- Why Join Us Section -->
+<section class="why-join">
+  <div class="container">
+    <h2>Why <span>Join Vertex Academy?</span></h2>
+    <p class="intro">We’re not just another tuition class — we’re a student’s second home for learning and growth!</p>
+
+    <div class="features">
+      <div class="feature-card">
+        <!-- <img src="assets/experienced-teachers.png" alt="Experienced Teachers" /> -->
+        <h3>Experienced Faculty</h3>
+        <p>Our teachers bring years of experience and a passion for teaching young minds with clarity and care.</p>
+      </div>
+
+      <div class="feature-card">
+        <!-- <img src="assets/personal-attention.png" alt="Personal Attention" /> -->
+        <h3>Personal Attention</h3>
+        <p>We ensure every child gets individual focus with small batch sizes and doubt-solving sessions.</p>
+      </div>
+
+      <div class="feature-card">
+        <!-- <img src="assets/regular-tests.png" alt="Regular Assessments" /> -->
+        <h3>Regular Assessments</h3>
+        <p>Consistent evaluations, feedback and parent-teacher interaction help track progress and build confidence.</p>
+      </div>
+
+      <div class="feature-card">
+        <!-- <img src="assets/conceptual-learning.png" alt="Conceptual Clarity" /> -->
+        <h3>Conceptual Clarity</h3>
+        <p>We focus on understanding, not just memorization — helping students build strong academic foundations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+<!-- Gallery Section -->
+<section class="gallery-section">
+  <div class="container">
+    <h2><span>Our</span> Classroom Moments</h2>
+    <p class="subtext">A glimpse into the learning environment at Vertex Academy</p>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="assets/classroom1.jpg" alt="Classroom Image 1">
+        <!-- <div class="caption">Interactive Learning</div> -->
+      </div>
+      <div class="gallery-item">
+        <img src="assets/classroom3.jpg" alt="Classroom Image 2">
+        <!-- <div class="caption">Engaging Lectures</div> -->
+      </div>
+      <div class="gallery-item">
+        <img src="assets/classroom9.jpg" alt="Classroom Image 3">
+        <!-- <div class="caption">Thoughtful Environment</div> -->
+      </div>
+      <div class="gallery-item">
+        <img src="assets/classroom5.jpg" alt="Classroom Image 4">
+        <!-- <div class="caption">Student Discussions</div> -->
+      </div>
+      <div class="gallery-item">
+        <img src="assets/classroom8.jpg" alt="Classroom Image 5">
+        <!-- <div class="caption">Creative Learning</div> -->
+      </div>
+      <div class="gallery-item">
+        <img src="assets/classroom6.jpg" alt="Classroom Image 6">
+        <!-- <div class="caption">Motivated Students</div> -->
+      </div>
+      <div class="gallery-item">
+        <img src="assets/classroom10.jpg" alt="Classroom Image 7">
+        <!-- <div class="caption">Friendly Atmosphere</div> -->
+      </div>
+      <div class="gallery-item">
+        <img src="assets/classroom4.jpg" alt="Classroom Image 7">
+        <!-- <div class="caption">Friendly Atmosphere</div> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Contact -->
+   <!-- Contact / Enquiry Section -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <h2><span>Get in Touch</span> with Vertex Academy</h2>
+    <p class="subtext">Have a question or want to enquire about admission? We’d love to hear from you!</p>
+
+    <form id="whatsappForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Email Address" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+      <select id="standard" required>
+        <option value="">Select Standard</option>
+        <option value="1st">1st</option>
+        <option value="2nd">2nd</option>
+        <option value="3rd">3rd</option>
+        <option value="4th">4th</option>
+        <option value="5th">5th</option>
+        <option value="6th">6th</option>
+        <option value="7th">7th</option>
+        <option value="8th">8th</option>
+        <option value="9th">9th</option>
+        <option value="10th">10th</option>
+      </select>
+      <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send via WhatsApp</button>
+    </form>
+    <p id="successMessage" style="display: none; color: green; margin-top: 10px;">
+    <!-- ✅ Message ready! Redirecting to WhatsApp... -->
+  </p>
+
+  </div>
+</section>
+
+  <!-- Google Map -->
+  <!-- 📍 Catchy Google Map Section -->
+<section id="map-section" style="padding: 60px 20px; background: linear-gradient(to right, #f9fafb, #e5e7eb); font-family: 'Segoe UI', sans-serif;">
+  <h2 style="text-align: center; font-size: 2.8rem; color: #1f2937; font-weight: 700; margin-bottom: 10px;">
+    📍 Find Us on the Map
+  </h2>
+  <p style="text-align: center; color: #4b5563; font-size: 1.1rem; margin-bottom: 50px;">
+    Easy to locate, easier to connect — for founders, partners, and visitors alike!
+  </p>
+
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; align-items: stretch; gap: 40px;">
+    
+    <!-- Left: Google Map -->
+    <div style="flex: 1 1 500px; min-width: 300px; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12); border: 4px solid white;">
+      <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.477969256975!2d72.99547637497881!3d19.130544082085294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c18e7304d29b%3A0xfae327d96b2dbcf!2sVertex%20Academy!5e0!3m2!1sen!2sin!4v1749060371030!5m2!1sen!2sin"
+          width="100%" height="100%" style="border: 0; position: absolute; top: 0; left: 0;"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Right: Info Card -->
+    <div style="flex: 1 1 350px; background: white; border-radius: 20px; padding: 40px 30px; box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08); color: #1f2937;">
+      <h3 style="font-size: 1.8rem; font-weight: bold; margin-bottom: 25px;">📌 Visit Our Office</h3>
+      <p style="margin-bottom: 20px; font-size: 1.05rem;"><strong>🏢 Address:</strong><br>Shree Ganesh Tower, Shanti Nagar, Sector 21, Ghansoli, Navi Mumbai, Maharashtra 400701</p>
+      <p style="margin-bottom: 20px; font-size: 1.05rem;"><strong>📞 Phone:</strong><br>+91 70218 08718</p>
+      <p style="margin-bottom: 0; font-size: 1.05rem;"><strong>🕒 Business Hours:</strong><br>Mon - Sat, 10 AM - 7 PM</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <!-- 🔻 Footer Section for Vertex Academy -->
+<footer style="background: linear-gradient(to right, #0f172a, #1e293b); color: #f9fafb; padding: 60px 20px 30px; font-family: 'Segoe UI', sans-serif;">
+
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+    
+    <!-- Branding -->
+    <div style="flex: 1 1 250px;">
+      <h2 style="font-size: 1.8rem; font-weight: bold; margin-bottom: 15px;"> Vertex Academy</h2>
+      <p style="color: #d1d5db;">Empowering learners, shaping futures. Join us at Vertex — where knowledge meets innovation.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div style="flex: 1 1 150px;">
+      <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 10px;">Quick Links</h3>
+      <ul style="list-style: none; padding: 0; color: #9ca3af; line-height: 2;">
+        <li><a href="#about" style="color: inherit; text-decoration: none;">About</a></li>
+        <!-- <li><a href="#courses" style="color: inherit; text-decoration: none;">Courses</a></li> -->
+        <li><a href="#map-section" style="color: inherit; text-decoration: none;">Location</a></li>
+        <li><a href="#contact" style="color: inherit; text-decoration: none;">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div style="flex: 1 1 250px;">
+      <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 10px;">Contact</h3>
+      <p style="color: #d1d5db;">📍 Shree Ganesh Tower, Shanti Nagar, Sector 21, Ghansoli, Navi Mumbai, Maharashtra 400701</p>
+      <p style="color: #d1d5db;">📞 +91 70218 08718</p>
+      <p style="color: #d1d5db;">✉️ contact@vertexacademy.in</p>
+    </div>
+
+    <!-- Social Icons (optional) -->
+    <div style="flex: 1 1 200px;">
+      <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 10px;">Follow Us</h3>
+      <div style="display: flex; gap: 15px; font-size: 1.5rem;">
+        <!-- <a href="#" title="Website" style="color: #9ca3af; text-decoration: none;">🌐</a> -->
+        <a href="#" title="Instagram" style="color: #9ca3af; text-decoration: none;">📸</a>
+        <!-- <a href="#" title="LinkedIn" style="color: #9ca3af; text-decoration: none;">💼</a> -->
+        <!-- <a href="#" title="YouTube" style="color: #9ca3af; text-decoration: none;">▶️</a> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Strip -->
+  <div style="border-top: 1px solid #374151; margin-top: 40px; padding-top: 20px; text-align: center; color: #9ca3af; font-size: 14px;">
+    © 2025 Vertex Academy. All rights reserved.
+  </div>
+</footer>
+
+
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+</body>
+</html>
