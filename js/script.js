@@ -26,42 +26,36 @@ function toggleMenu() {
   // // Optional: Reset form
   // document.getElementById("whatsappForm").reset();
   // });
-document.getElementById('whatsappForm').addEventListener('submit', function (e) {
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const phone = document.getElementById('phone').value.trim();
-  const standard = document.getElementById('standard').value;
-  const message = document.getElementById('message').value.trim();
+  const studentName = document.getElementById("studentName").value;
+  const parentName = document.getElementById("parentName").value;
+  const phone = document.getElementById("phone").value;
+  const address = document.getElementById("address").value;
+  const school = document.getElementById("school").value;
+  const standard = document.getElementById("standard").value;
+  const board = document.getElementById("board").value;
+  const message = document.getElementById("message").value;
 
-  const whatsappNumber = "919619454671"; // Founder’s WhatsApp number (with country code)
+  const fullMessage = `*Vertex Academy Enquiry*\n\n` +
+                      `👦 *Student Name:* ${studentName}\n` +
+                      `👨‍👩‍👧 *Parent Name:* ${parentName}\n` +
+                      `📞 *Phone:* ${phone}\n` +
+                      `🏠 *Address:* ${address}\n` +
+                      `🏫 *School:* ${school}\n` +
+                      `🎓 *Standard:* ${standard}\n` +
+                      `📘 *Board:* ${board}\n` +
+                      `📝 *Message:* ${message}`;
 
-  const url = `https://wa.me/${whatsappNumber}?text=` +
-    encodeURIComponent(
-      `👋 Hello Vertex Academy!\n\n📌 Name: ${name}\n📧 Email: ${email}\n📱 Phone: ${phone}\n🏫 Standard: ${standard}\n📝 Message: ${message}`
-    );
+  // ✅ Replace this with your WhatsApp number
+  const whatsappURL = `https://wa.me/919619454671?text=${encodeURIComponent(fullMessage)}`;
 
-  const submitBtn = this.querySelector("button[type='submit']");
-  const successMsg = document.getElementById("successMessage");
-
-  // Show loading state
-  submitBtn.disabled = true;
-  submitBtn.textContent = "Sending...";
-
-  // Simulate processing delay
+  // Show success message before redirect
+  document.getElementById("successMessage").style.display = "block";
   setTimeout(() => {
-    window.open(url, '_blank');
-
-    // Show success message
-    successMsg.style.display = "block";
-
-    // Reset form
-    document.getElementById("whatsappForm").reset();
-
-    // Restore button state
-    submitBtn.disabled = false;
-    submitBtn.textContent = "Send via WhatsApp";
-
-  }, 1500); // 1.5 second delay
+    window.open(whatsappURL, "_blank");
+  }, 1000);
 });
+;
