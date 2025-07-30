@@ -218,7 +218,7 @@ body {
 
 
 /* Responsive for mobile */
-@media (max-width: 620px) {
+@media (max-width: 768px) {
   .nav-links {
     display: none;
     position: absolute;
@@ -280,7 +280,7 @@ body {
 
 
 
-@media (max-width: 620px) {
+@media (max-width: 768px) {
 
   .floating-books {
     display: none;
