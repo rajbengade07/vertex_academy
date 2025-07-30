@@ -22,21 +22,58 @@
       <li><a href="#contact">Contact</a></li>
 
     </ul>
-    <div class="hamburger" onclick="toggleMenu()">
+    <div class="hamburger" id="hamburgerID">
       <span></span>
       <span></span>
       <span></span>
-    </div>
+      
+   </div>
+    
   </nav>
+  <div class="sidebar" id="sidebarID">
+      <ul class="sidebar_links" >
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+      
+    </ul>
+      <div class="close_sidebar" id="close_sidebarID">+</div>
+      </div>
+    
 
   <!-- Hero Section -->
-<section class="hero" id="hero">
-  <div class="hero-overlay">
-    <div class="hero-content">
-      <!--<h1>Planning + Hard Work + Confidence = <span>Success</span></h1> -->
-      <a href="#contact" class="hero-btn">Enroll Now</a>
+<section class="hero1" id="hero">
+  <div class="floating-books">
+  <img src="/assets/book.png" alt="Stack of Books" class="img1">
+  <img src="/assets/book.png" alt="Stack of Books" class="img2">
+</div>
+
+      <div class="container1">
+      <h2 class="subtitle">Vertex Academy</h2>
+      <div class="underline"></div>
+      <h1 class="title">Excellence in Education</h1>
+
+      <div class="quote">
+        Planning + Hard Work + Confidence = Success
+      </div>
+
+      <p class="description">
+        Experience quality offline education with dedicated faculty and proven
+        teaching methods.
+      </p>
+
+      <div class="button-wrapper">
+        <a href="#contact">
+          <button class="enroll-button" >
+          <span>Enroll Now</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+        </a>
+      </div>
+
     </div>
-  </div>
+
 </section>
 
 
@@ -271,7 +308,7 @@
 </footer>
 
 
-  <script src="js/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<script src="js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </body>
 </html>

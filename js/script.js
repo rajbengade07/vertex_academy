@@ -1,7 +1,22 @@
-function toggleMenu() {
-      document.getElementById('navLinks').classList.toggle('active');
-}
-  
+const sidebar=document.getElementById("sidebarID")
+
+document.getElementById("hamburgerID").addEventListener("click",()=>{
+    
+    sidebar.style.display="flex"
+})
+
+document.getElementById("close_sidebarID").addEventListener("click",()=>{
+    sidebar.style.display="none"
+})
+
+const sidebar_links=document.querySelectorAll("#sidebarID ul a")
+
+sidebar_links.forEach(element => {
+   element.addEventListener("click",()=>{
+      sidebar.style.display="none"
+   })
+});
+
   // document.getElementById('whatsappForm').addEventListener('submit', function (e) {
   //   e.preventDefault();
 
