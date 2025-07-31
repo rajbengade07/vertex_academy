@@ -52,6 +52,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   const school = document.getElementById("school").value;
   const standard = document.getElementById("standard").value;
   const board = document.getElementById("board").value;
+  const medium = document.getElementById("medium").value; // ✅ New medium field
   const message = document.getElementById("message").value;
 
   const fullMessage = `*Vertex Academy Enquiry*\n\n` +
@@ -62,9 +63,10 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
                       `🏫 *School:* ${school}\n` +
                       `🎓 *Standard:* ${standard}\n` +
                       `📘 *Board:* ${board}\n` +
+                      `🗣️ *Medium:* ${medium}\n` + // ✅ Included in message
                       `📝 *Message:* ${message}`;
 
-  // ✅ Replace this with your WhatsApp number
+  // ✅ Replace with your WhatsApp number
   const whatsappURL = `https://wa.me/919619454671?text=${encodeURIComponent(fullMessage)}`;
 
   // Show success message before redirect
@@ -73,4 +75,3 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     window.open(whatsappURL, "_blank");
   }, 1000);
 });
-;
