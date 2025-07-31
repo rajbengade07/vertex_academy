@@ -67,7 +67,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
                       `📝 *Message:* ${message}`;
 
   // ✅ Replace with your WhatsApp number
-  const whatsappURL = `https://wa.me/919619454671?text=${encodeURIComponent(fullMessage)}`;
+  const whatsappURL = `https://wa.me/917021808718?text=${encodeURIComponent(fullMessage)}`;
 
   // Show success message before redirect
   document.getElementById("successMessage").style.display = "block";
