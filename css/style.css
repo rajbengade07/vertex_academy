@@ -21,7 +21,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 888;
+  z-index: 8;
 
 }
 
@@ -247,7 +247,7 @@ body {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    z-index: 1;
+    z-index: 9;
     top: 0;
     right: 0;
     background-color: rgb(4, 4, 4);
@@ -319,7 +319,7 @@ body {
 
 /* Optimized about us section */
 .about {
-  padding: 0px 20px;
+  padding: 20px 20px;
   background-color: #f9f9f9;
   scroll-margin-top: 60px;
   /* margin-top: 20px; */
